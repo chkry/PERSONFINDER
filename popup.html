@@ -1,0 +1,49 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title>PERSON FINDER</title>
+    <style>
+      body {
+        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 14px;
+        width: 250px;
+        height: 80px;
+        background-color: black;
+        color: white;
+      }
+      body a{
+        color:orange;
+        text-decoration: none;
+      }
+      #status {
+        white-space: pre;
+        text-overflow: ellipsis;
+        max-width: 100%;
+      }
+    </style>
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+     -->
+
+    <script src="bg.js"></script>
+    
+  </head>
+  <body>
+
+    <div id="status"><strong>PERSON STATUS FINDER</strong></div>
+    <img id="image-result" hidden>
+    <div id="chakradhar">Developed by <a href="http://www.chakrireddy.com" target="_blank"><strong> CHAKRADHAR REDDY</strong></a></div>
+    <div id="depart"><strong>MPS-5 TELEPHONY</strong></div>
+    <div>LG SOFT INDIA</div>
+
+  </body>
+</html>
+
